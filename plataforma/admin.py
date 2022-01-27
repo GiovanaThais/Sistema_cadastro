@@ -4,7 +4,7 @@ from .models import Imovel, Cidade, Imagem
 
 @admin.register(Imovel)
 class ImoveiAdmin(admin.ModelAdmin):
-    list_display = ('rua', 'valor', 'quartos', 'tamanho', 'cidade', 'tipo')
+    list_display = ('cidade', 'valor', 'quartos', 'tamanho', 'rua', 'tipo')
     list_editable = ('valor', 'tipo')
     list_filter = ('cidade', 'tipo')
     

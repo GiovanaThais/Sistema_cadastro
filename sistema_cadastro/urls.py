@@ -18,11 +18,19 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+from rest_framework import routers
+
+from plataforma import viewsets as imovelviewsets
+
+route = routers.DefaultRouter()
+
+route.register(r'api-rest', imovelviewsets.ImovelViewSet, basename='api')
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('autenticacao.urls')),
     path('', include('plataforma.urls')),
-    path('api/', include('rest_framework.urls')),
+    path('api/', include(route.urls)),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

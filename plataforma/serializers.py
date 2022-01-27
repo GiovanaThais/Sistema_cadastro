@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Imovel, Cidade, Imagem
+from plataforma.models import Imovel
 
 
 class ImovelSerializer(serializers.ModelSerializer):
@@ -7,6 +7,7 @@ class ImovelSerializer(serializers.ModelSerializer):
         model = Imovel
         fields ='__all__'
     
+'''
 class CidadesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cidade
@@ -16,3 +17,4 @@ class ImagemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Imagem
         fields ='__all__'
+'''
