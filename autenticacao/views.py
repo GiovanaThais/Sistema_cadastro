@@ -35,8 +35,8 @@ def cadastro(request):
 
 def logar(request):
     if request.method == "GET":
-        #if request.user.is_authenticated:
-            #return redirect('/')
+        if request.user.is_authenticated:
+            return redirect('/')
         return render(request, 'logar.html')
     elif request.method == "POST":
         username = request.POST.get('username')
