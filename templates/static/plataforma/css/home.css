@@ -43,8 +43,8 @@
 
     border: none;
     background-color: transparent;
-    border: 2px solid #30c3cd;
-    color: #30cdc5;
+    border: 2px solid #3093cd;
+    color: #309bcd;
     padding: 5px 10px 5px 10px;
     font-weight: bold;
 
@@ -53,7 +53,7 @@
 
 .titulo_filtrar{
 
-    color:#30cdb8;
+    color:#2273cf;
     font-weight: bold;
     font-size: 30px;
 
@@ -63,7 +63,7 @@
 
     border: none;
     color: white;
-    background-color: #30cdb8;
+    background-color: #2023d8;
     font-weight: bold;
     font-size: 20px;
 
@@ -83,7 +83,7 @@
 }
 
 .titulo_especificacao{
-    color: #30cdc0;
+    color: #1e31e2;
     font-weight: bold;
     margin-top: 20px;
     font-size: 40px;
@@ -123,7 +123,7 @@
 .btn_agendar{
 
     border: none;
-    background-color: #30cdc0;
+    background-color: #1746e0;
     color: white;
     font-weight: bold;
     font-size: 20px;

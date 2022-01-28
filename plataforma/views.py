@@ -5,7 +5,7 @@ from django.shortcuts import render
 from plataforma.models import Imovel
 
 
-#@login_required(login_url='/auth/logar/') #permite que apenas usuarios logados acessem a plataforma
+@login_required(login_url='/auth/logar/') #permite que apenas usuarios logados acessem a plataforma
 def home(request):
     imoveis = Imovel.objects.all()
     return render(request, 'home.html', {'imoveis': imoveis})

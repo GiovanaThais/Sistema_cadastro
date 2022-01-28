@@ -155,7 +155,4 @@ REST_FRAMEWORK = {
         'anon': '5/minute',  # second, day, month, year
         'user': '10/minute'
     },
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ],
 }
